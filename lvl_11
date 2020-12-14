@@ -1,0 +1,8 @@
+1.- This is a rot13 challenge, it means that the letters has been rotated 13 
+    positions
+
+$ cat data.txt | tr "abcdefghijklmnopqrstuvwxyz" "nopqrstuvwxyzabcdefghijklm" | tr "ABCDEFGHIJKLMNOPQRSTUVWXYZ" "NOPQRSTUVWXYZABCDEFGHIJKLM"
+The password is 5Te8Y4drgCRfCx8ugdwuEX8KFC6k2EUu
+
+Credentials for the next challenge
+bandit12:5Te8Y4drgCRfCx8ugdwuEX8KFC6k2EUu

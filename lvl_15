@@ -1,0 +1,7 @@
+1.- We need to create a connection using ssl encryption to port 30001
+    and give the current password
+
+$ openssl s_client -connect localhost:30001
+
+Credentials for the next challenge
+bandit16:cluFn7wTiGryunymYOu4RcffSxQluehd

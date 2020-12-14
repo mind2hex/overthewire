@@ -1,0 +1,27 @@
+1.- A program is running automatically at regular intervals from cron, 
+    the time-based job scheduler. Look in /etc/cron.d/ for the 
+    configuration and see what command is being executed.
+
+## First thing to do is see what says the cron file
+$ cat /etc/cron.d/cronjob_bandit23
+@reboot bandit23 /usr/bin/cronjob_bandit23.sh  &> /dev/null
+* * * * * bandit23 /usr/bin/cronjob_bandit23.sh  &> /dev/null
+
+## Now we know which program is being executed so let's check out 
+## what is the program doing.   ( Commentin script works )
+$ cat /usr/bin/cronjob_bandit23.sh
+#!/bin/bash
+
+myname=$(whoami)
+mytarget=$(echo I am user $myname | md5sum | cut -d ' ' -f 1)  # mytarget is where the flag is writted
+
+echo "Copying passwordfile /etc/bandit_pass/$myname to /tmp/$mytarget" 
+
+cat /etc/bandit_pass/$myname > /tmp/$mytarget
+
+## So now we know how the flag is generated
+$ cat /tmp/$(echo I am user bandit23 | md5sum | cut -d ' ' -f 1) # This is where bandit23 is writting the password
+jc1udXuA1tiHqjIsL8yaapX5XIAI6i0n
+
+Credentials for the next challene
+bandit23:jc1udXuA1tiHqjIsL8yaapX5XIAI6i0n

@@ -1,0 +1,13 @@
+1.- The challenge here is similar to the first one, in this challenge we see
+    a file that use spaces in his name so if we try:
+$ cat spaces in this filename
+    cat will interpret every word in the sentence "spaces in this filename" as
+    a file
+
+    Solution:
+$ cat 'spaces in this filename'
+$ cat "spaces in this filename"
+$ cat spaces\ in\ this\ filename
+
+Credentials for the next challenge
+bandit3:UmHadQclWmgdLOKQ3YNgjWxGoRMb5luK

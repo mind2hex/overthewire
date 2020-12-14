@@ -1,0 +1,10 @@
+1.- In this challenge we need to work with a git repository
+    The only thing to do is git clone the repository
+
+$ cd $(mktemp -d /tmp/file.XXX)
+$ git clone ssh://bandit27-git@localhost/home/bandit27-git/repo # using the same password
+$ cat repo/README
+The password to the next level is: 0ef186ac70e04ea33b4c1853d2526fa2
+
+Credentials for the next challenge
+bandit28:0ef186ac70e04ea33b4c1853d2526fa2

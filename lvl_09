@@ -1,0 +1,20 @@
+1.- In this challenge, data.txt is a binary file, so in order to read it, 
+    we need to use strins and grep to find the specifications:
+
+$ strings < data.txt | grep "="
+========== the*2i"4
+=:G e
+========== password
+<I=zsGi
+Z)========== is
+A=|t&E
+Zdb=
+c^ LAh=3G
+*SF=s
+&========== truKLdjsbJ5g7yyJ2X2R0o3a5HQJFuLk
+S=A.H&^
+
+The password is 32 characters
+
+Credentials for the next challenge
+bandit10:truKLdjsbJ5g7yyJ2X2R0o3a5HQJFuLk

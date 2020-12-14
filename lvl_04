@@ -1,0 +1,21 @@
+1.- The password is stored in a human-readable file so with the command file
+    we can determine which file is readable and which not.
+$ file ./inhere/*
+./inhere/-file00: data
+./inhere/-file01: data
+./inhere/-file02: data
+./inhere/-file03: data
+./inhere/-file04: data
+./inhere/-file05: data
+./inhere/-file06: data
+./inhere/-file07: ASCII text
+./inhere/-file08: data
+./inhere/-file09: data
+
+    -file07 says ASCII text so it's readable, the others are binary data or so
+
+$ cat ./inhere/-file07
+koReBOKuIDDepwhWk7jZC0RTdopnAYKh
+
+Credentials for the next challenge
+bandit05:koReBOKuIDDepwhWk7jZC0RTdopnAYKh

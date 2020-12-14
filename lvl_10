@@ -1,0 +1,7 @@
+1.- In this case we will use base64 decodification
+
+$ cat data.txt | base64 -d 
+The password is IFukwKGsFW8MOq3IRFqrxE1hxTNEbUPR
+
+Credentials for the next challene
+bandit11:IFukwKGsFW8MOq3IRFqrxE1hxTNEbUPR

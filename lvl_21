@@ -1,0 +1,20 @@
+1.- A program is running automatically at regular intervals from cron,
+    the time-based job scheduler. Look in /etc/cron.d/ for the 
+    configuration and see what command is being executed.
+
+## Let's go see cronjob files
+$ cat /etc/cron.d/cronjob_bandit22
+@reboot bandit22 /usr/bin/cronjob_bandit22.sh &> /dev/null
+* * * * * bandit22 /usr/bin/cronjob_bandit22.sh &> /dev/null
+
+## It shows that /usr/bin/cronjob_bandit22.sh is executing
+$ /usr/bin/cronjob_bandit22.sh
+chmod: changing permissions of '/tmp/t7O6lds9S0RqQh9aMcz6ShpAoZKF7fgv': Operation not permitted
+/usr/bin/cronjob_bandit22.sh: line 3: /tmp/t7O6lds9S0RqQh9aMcz6ShpAoZKF7fgv: Permission denied
+
+## it looks like the program is trying to change file permission of /tmp/t7O6lds9S0RqQh9aMcz6ShpAoZKF7fgv
+$ cat /tmp/t7O6lds9S0RqQh9aMcz6ShpAoZKF7fgv
+Yk7owGAcWjwMVRwrTesJEwB7WVOiILLI
+
+Credentials for the next challenge
+bandit22:Yk7owGAcWjwMVRwrTesJEwB7WVOiILLI

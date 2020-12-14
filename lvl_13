@@ -1,0 +1,8 @@
+1.- for this challenge we need to use ssh
+    they give us a sshkey to log in as bandit14 so we can read the flag located 
+    in /etc/bandit_pass/bandit14
+
+$ ssh bandit14@localhost -i sshkey.private cat /etc/bandit_pass/bandit14
+
+
+bandit14:wcYUJFw0k0XLShlDzztnTBHiqxU3b3e

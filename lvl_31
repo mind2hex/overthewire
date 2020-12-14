@@ -1,0 +1,20 @@
+1.- The challenge here is to create a key.txt file in the git directory, but
+    the .gitignore is ignoring all *.txt file so we have to change it
+
+$ nano .gitignore   # remove *.txt line
+$ echo 'May I come in?' > key.txt
+$ git add key.txt
+$ git commit -a -m "done"
+$ git push origin master
+remote: ### Attempting to validate files... ####
+remote: 
+remote: .oOo.oOo.oOo.oOo.oOo.oOo.oOo.oOo.oOo.oOo.
+remote: 
+remote: Well done! Here is the password for the next level:
+remote: 56a9bf19c63d650ce78e6ec0354ee45e
+remote: 
+remote: .oOo.oOo.oOo.oOo.oOo.oOo.oOo.oOo.oOo.oOo.
+remote: 
+
+Credentials for the next challenge
+bandit32:56a9bf19c63d650ce78e6ec0354ee45e

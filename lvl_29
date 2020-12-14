@@ -1,0 +1,21 @@
+1.- In this challenge we need to change branch
+
+$ git branch -l -a 
+* master
+  remotes/origin/HEAD -> origin/master
+  remotes/origin/dev
+  remotes/origin/master
+  remotes/origin/sploits-dev
+
+$ git checkout dev
+$ cat README.md
+# Bandit Notes
+Some notes for bandit30 of bandit.
+
+## credentials
+
+- username: bandit30
+- password: 5b90576bedb2cc04c86a9e924ce42faf
+
+Credentials for the next challenge
+bandit30:5b90576bedb2cc04c86a9e924ce42faf

@@ -1,0 +1,12 @@
+1.- in this challenge we need to inspect again a git repository
+
+## First we have to see tags
+$ git tags
+secret
+
+$ git show secret
+47e603bb428404d265f59c42920d81e5
+
+
+Credentials for the next challenge
+bandit31:47e603bb428404d265f59c42920d81e5

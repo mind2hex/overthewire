@@ -1,0 +1,15 @@
+1.- in this file we need to cat a hidden file.
+    hidden files are files that start with "."
+    example:
+       ".bashrc" is a hidden file located in $HOME directory
+   
+    by default, hidden files doesn't show when we use ls so we need
+    to use ls -a to show every single file in the current or specified directory
+$ ls -a inhere/
+. .. .hidden
+$ cat inhere/.hidden
+pIwrPrtPN36QITSp3EQaw936yaFoFgAB
+
+
+Credentials for the next challenge
+bandit4:pIwrPrtPN36QITSp3EQaw936yaFoFgAB

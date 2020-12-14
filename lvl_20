@@ -1,0 +1,15 @@
+1.- There is a setuid binary in the homedirectory that does the following: 
+    it makes a connection to localhost on the port you specify as a commandline 
+    argument. It then reads a line of text from the connection and compares it 
+    to the password in the previous level (bandit20). If the password is correct, 
+    it will transmit the password for the next level (bandit21).
+
+$ echo "GbKksEFF4yrVs6il55v6gwY5aVje5f0j" | nc -lp 1111 &
+[1] 15167
+$ ./suconnect 1111
+Read: GbKksEFF4yrVs6il55v6gwY5aVje5f0j
+Password matches, sending next password
+gE269g2h3mw3pwgrj0Ha9Uoqen1c9DGr
+
+Credentials for the next challenge
+bandit21:gE269g2h3mw3pwgrj0Ha9Uoqen1c9DGr

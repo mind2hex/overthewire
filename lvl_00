@@ -1,0 +1,20 @@
+1.- We need to connect to bandit.labs.overthewire.org, on port 2220 using ssh, password (bandit0).
+$ ssh bandit0@bandit.labs.overthewire.org -p 2220
+
+2.- Once logged, we cat the readme file.
+$ cat readme
+boJ9jbbUNNfktd78OOpsqOltutMc3MY1
+
+3.- Additionally, we install the tools specified in the banner.
+
+    * gef (https://github.com/hugsy/gef) in /usr/local/gef/
+    * pwndbg (https://github.com/pwndbg/pwndbg) in /usr/local/pwndbg/
+    * peda (https://github.com/longld/peda.git) in /usr/local/peda/
+    * gdbinit (https://github.com/gdbinit/Gdbinit) in /usr/local/gdbinit/
+    * pwntools (https://github.com/Gallopsled/pwntools)
+    * radare2 (http://www.radare.org/)
+    * checksec.sh (http://www.trapkit.de/tools/checksec.html) in /usr/local/bin/checksec.sh
+
+
+Credentials for the next challenge
+bandit1:boJ9jbbUNNfktd78OOpsqOltutMc3MY1

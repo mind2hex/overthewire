@@ -1,0 +1,19 @@
+1.- A daemon is listening on port 30002 and will give you the password for 
+    bandit25 if given the password for bandit24 and a secret numeric 
+    4-digit pincode. There is no way to retrieve the pincode except by going 
+    through all of the 10000 combinations, called brute-forcing.
+
+    For this challenge i coded a script.py that uses multithreading, but using only 3
+    threads.
+
+$ nc localhost 30002
+I am the pincode checker for user bandit25. Please enter the password for user bandit24 and the secret pincode on a single line, separated by a space.
+UoMYTrfrBFHyQXmg6gzctqAwOmw1IohZ 2588
+Correct!
+The password of user bandit25 is uNG9O58gUE7snukf3bvZ0rxhtnjzSGzG
+
+Exiting.
+
+
+Credentials for the next challenge
+bandit25:uNG9O58gUE7snukf3bvZ0rxhtnjzSGzG

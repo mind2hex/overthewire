@@ -1,0 +1,8 @@
+1.- The password is next to the word "millionth", so we can easily find the pass
+    using grep
+$ grep "millionth" < data.txt
+cvX2JJa4CFALtqS87jk27qwqGhBM9plV
+
+
+Credentials for the next challenge
+bandit8:cvX2JJa4CFALtqS87jk27qwqGhBM9plV

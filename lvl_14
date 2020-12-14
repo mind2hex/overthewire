@@ -1,0 +1,19 @@
+1.- For the challene we need to communicate with local port 30000, so we can do this
+    in two ways:
+    first thing to do is echo the current password to the port 30000
+## USING NETCAT
+$ echo "4wcYUJFw0k0XLShlDzztnTBHiqxU3b3e" |  nc localhost 30000
+Correct!
+BfMYroe26WYalil77FoDi9qh59eK5xNr
+## USING /dev/tcp/host/port
+$ exec 100<>/dev/tcp/localhost/30000
+$ echo "4wcYUJFw0k0XLShlDzztnTBHiqxU3b3e" >&100
+$ cat <&100
+Correct!
+BfMYroe26WYalil77FoDi9qh59eK5xNr
+$ exec 100<&-  # close the fd
+
+
+
+Credentials for the next challene
+bandit15:BfMYroe26WYalil77FoDi9qh59eK5xNr

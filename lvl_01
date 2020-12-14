@@ -1,0 +1,14 @@
+1.- Once connected to the ssh server with the credentials bandit1:boJ9jbbUNNfktd78OOpsqOltutMc3MY1
+    we need to cat a file in the home directory, but there is a problem.
+    the filename is "-" so if we try:
+$ cat -
+    that may be because the file has a "-" as the name and because - is used for the arguments
+    it is not interpreted as the filename
+    Example: cat -h 
+
+    So how we read the file?
+$ cat < -
+$ cat ./-
+
+Credentials for the next challenge
+bandit2:CV1DtqXWVFXTvM2F0k09SHz0YwRINYA9

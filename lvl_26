@@ -1,0 +1,20 @@
+1.- The challenge here is try to get a shell
+    When we start a session using the private key in bandit25 home directory for user
+    bandit26, the predefined shell (/usr/bin/showtext) take us out of the session
+    after displaying a message using the command more.
+    We can reduce the size of the window in such a way that the more command does not 
+    finish executing and lets us execute console commands within "more", in this way 
+    we can execute vi by pressing ":v"
+
+    Once inside vi, we set the shell variable
+:set shell=/bin/sh
+
+and then we run a shell session
+:!sh
+
+When we start the shell, we need to execute the script in home directory
+$ ./bandit27-do cat /etc/bandit_pass/bandit27
+3ba3118a22e93127a4ed485be72ef5ea
+
+Credentials for the next challenge
+bandit27:3ba3118a22e93127a4ed485be72ef5ea

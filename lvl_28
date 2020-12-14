@@ -1,0 +1,20 @@
+1.- We need to do almost the same thing that the previous challenge
+
+$ cd $(mktemp ....)
+$ git clone ... # with the same password
+
+    Once we are inside the git repo, we need to do a checkout to a previous commit
+    because the actual README.md file doesn't contain the password
+
+$ git checkout c086d11a00c0648d095d04c089786efef5e01264
+$ cat README.md
+# Bandit Notes
+Some notes for level29 of bandit.
+
+## credentials
+
+- username: bandit29
+- password: bbc96594b4e001778eee9975372716b2
+   
+Credentials for the next challenge
+bandit29:bbc96594b4e001778eee9975372716b2

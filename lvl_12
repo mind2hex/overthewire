@@ -1,0 +1,17 @@
+1.- This challenge we have to reverse a file.
+    data.txt is a hexdump of a compressed file so in order to reverse the 
+    hexdump we have to use xxd -r but first we have to create a temporary directory
+    and cd into it
+
+$ cd $(mktemp -d /tmp/file.XXX) && cp $HOME/data.txt ./  # changing directory
+$ xdd -r data.txt > data.gz    # reversing data.txt to a gzip file
+$ gzip -d data.gz
+$ bzip2 -d data && mv data.out data.gz
+$ gzip -d data.gz
+$ tar -xvf data5.bin
+... # a lot of decompressin files
+$ cat data8
+The password is 8ZjyCRiBWFYkneahHwxCv3wb2a1ORpYL
+
+Credentials for the next challenge
+bandit13:8ZjyCRiBWFYkneahHwxCv3wb2a1ORpYL

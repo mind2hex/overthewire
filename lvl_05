@@ -1,0 +1,21 @@
+1.- We need to find a file somewhere with the next charateristics:
+     
+    human-readable
+    1033 bytes in size
+    not executable
+
+    So we gonna use find command
+$ find ./inhere/ -type f \! -executable -size 1033c
+./inhere/maybeher07/.file2
+
+    Explanation of find command:
+      ./inhere/      # directory to search
+      -type f        # specifying the file type, file in this case
+      \! -executable # \! tells the program that the file must be no executable
+      -size 1033c    # size specification in bytes
+
+$ cat ./inhere/maybehere07/.file2
+DXjZPULLxYr17uwoI01bNLQbtFemEgo7
+
+Credentials for the next challenge
+bandit6:DXjZPULLxYr17uwoI01bNLQbtFemEgo7

@@ -1,0 +1,20 @@
+1.- We need to find a file with the next charateristics:
+
+    owned by user bandit7
+    owned by group bandit6
+    33 bytes in size
+
+$ find / -user bandit7 -group bandit6 -size 33c 2>/dev/null
+
+    Explanation of find command:
+      /           # path to search  / -> root path
+      -user       # User specification
+      -group      # group specification
+      -size       # size specification
+      2>/dev/null # redirecting error stderr to /dev/null
+
+$ cat $(find / -user bandit7 -group bandit6 -size 33c 2>/dev/null
+HKBPTKQnIay4Fw76bEy8PVxKEDQRKTzs
+
+Credentials for the next challenge
+bandit7:HKBPTKQnIay4Fw76bEy8PVxKEDQRKTzs

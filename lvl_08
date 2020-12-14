@@ -1,0 +1,16 @@
+1.- Is the only line of thet that occurs only once
+    for some reason, when usin uniq command it doesn't work so
+    we gonna write a script
+```
+file="$HOME/data.txt"
+
+for i in $(cat $file);do
+  result=$(car file | grep -c --word-regexp $i)
+  if [[ $result -eq 1 ]];then
+    echo "[#] FOUND: $i"
+  fi
+done
+```
+
+Credentials for the next challene
+bandit9:UsvVyFSfZZWbi6wgC7dAFyFuR6jQQUhR
