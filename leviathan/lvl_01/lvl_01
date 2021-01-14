@@ -1,0 +1,11 @@
+1.- We need to find the password for the setuid binary file check
+
+    If we use radare2, we can see that there is a string comparasion between
+    s1 and s2, (strcmp(s1,s2)). So because in the disassembled code s2 = "sex"
+    we can deduce the right password for executing the system("/bin/sh") function
+    and read the password for user leviathan2
+
+
+
+Credentials for the next challenge
+leviathan2:ougahZi8Ta
